@@ -1,0 +1,12 @@
+<form id="signup-form" class="w-full max-w-sm" action="/create-customer" method="POST" >
+  <div class="flex items-center border-b border-blue-500 py-2">
+    <input name="email" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" id="email" type="email" placeholder="janedoe@example.com" aria-label="Full name">
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
+      Sign up
+    </button>
+
+    {{#ft}}
+      <input type="hidden" name="freeTrial" value="{{period}}" />
+    {{/ft}}
+  </div>
+</form>
